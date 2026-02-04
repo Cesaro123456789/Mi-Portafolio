@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #131313;
+  margin: 0;
+}
+
+/*----------HEADER---------*/
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2B2B2B;
+  gap: 10px;
+  padding-right: 15px;
+}
+.header-logo {
+  max-width: 70px;
+  max-height: 70px;
+}
+.header-name {
+  font-family: Outfit;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 18px;
+}
+
+/*----------HERO---------*/
+
+.hero {
+  display: flex;
+  align-items:  star;
+  justify-content: center;
+  height: 90dvh;
+  flex-direction: column;
+  font-family: montserrat;
+  color: #fff;
+  margin-left: 28px;
+}
+.hero h2 {
+  font-size: 35px;
+  margin-bottom: 0;
+  color: #F5F5F7;
+}
+.hero h3 {
+  max-width: 315px;
+  color: #86868B;
+}
+.social-buttons img {
+  max-width: 35px;
+  margin: 0 10px;
+  filter: invert(1);
+}
+.social-buttons a {
+  text-decoration: none;
+}
+.linkedin img {
+  max-width: 40px;
+  margin: 0;
+  margin-right: 8px;
+  position: relative;
+  top: 4px;
+}
+.cv-container {
+  margin: 40px 0;
+}
+.btn-cv {
+  background-color: #1561F0;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  padding-right: 25px;
+  border-radius: 50px;
+}
+.btn-cv img {
+  max-width: 15px;
+  filter: invert(1);
+  margin: 0 8px;
+  margin-right: 11px;
+  position: relative;
+  top: 2.5px;
+}
+
+/*--------SOBRE MI--------*/
+
+.about-section {
+  height: 52dvh;
+  color: #fff;
+  text-align: center;
+  font-family: montserrat;
+  background-color: #2B2B2B;
+}
+.section-title {
+  padding-top: 40px;
+  padding-bottom: 8px;;
+  margin: 0 100px;
+  font-size: 30px;
+  font-family: Outfit;
+  border-bottom: 2.8px solid #1561F0;
+  
+}
+.about-text {
+  margin: 30px 32px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/*----------PROYECTOS---------*/
+
+.proyects-section  {
+  font-family: montserrat;
+  display: flex;
+  flex-direction: column;
+}
+.proyects-section h2 {
+  padding-top: 40px;
+  padding-bottom: 8px;
+  text-align: center;
+  border-bottom: 2.8px solid #1561F0;
+  font-size: 30px;
+  margin: 0 100px;
+  font-family: Outfit;
+  color: #fff;
+}
+.proyects-cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #2B2B2B;
+  margin: 0 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  box-shadow: 0 0 18px #ffffff5e
+}
+.proyects-cards .BYN {
+  margin: 0 40px;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+.card-presentation {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.proyects-cards h3 {
+  text-align: center;
+  border-bottom: 2.8px solid #1561F0;
+  color: #fff;
+  padding-bottom: 4px;
+  margin: 15px 70px;
+}
+.proyects-cards p {
+  color: #fff;
+  margin: 0 25px;
+}
+.proyects-cards a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1561F0;
+  margin: 0 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: montserrat;
+  font-weight: 500;
+}
+.skills-proyects {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+.skills-proyects img {
+  filter: invert(1);
+  max-width: 30px;
+}
+
+/*----------Skills----------*/
+
+.skills-section {
+  background-color: #2B2B2B;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+  justify-items: center;
+  padding-bottom: 10px;
+}
+.skills {
+  text-align: center;
+  border-bottom: 2.8px solid #1561F0;
+  color: #fff;
+  padding-top: 30px;
+  margin: 46px 130px;
+  font-family: Outfit;
+  font-size: 30px;
+}
+.skills-cards {
+  background-color: #2B2B2B;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px #1D1D1F;
+  border: .8px solid #1D1D1F;
+  padding: 26px 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: montserrat;
+}
+.skills-cards h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.skills-title {
+  border-bottom: 2.8px solid #1561F0;
+}
+
+.skills-cards p {
+  background-color: #1561F0;
+  border-radius: 6px;
+  padding: 6px;
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.skills-cards img {
+  width: 70px;
+}
+
+/*----------CONTACTO----------*/
+
+.contact-section h2 {
+  padding-top: 55px;
+  text-align: center;
+  border-bottom: 2.8px solid #1561F0;
+  font-size: 30px;
+  margin: 0 80px;
+  margin-bottom: 55px;
+  font-family: Outfit;
+  color: #fff;
+}
+
+.contact-section {
+    padding: 0 20px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-container {
+    background: #1D1D1F;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px 25px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.contact-container h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: montserrat;
+}
+
+label {
+    color: #86868B;
+    font-size: 0.9rem;
+    margin-bottom: -10px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+input, textarea {
+    background: #141416;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #1561F0;
+    background: #18181B;
+    box-shadow: 0 0 15px rgba(21, 97, 240, 0.25);
+    transform: translateY(-2px);
+}
+
+::placeholder {
+    color: #4A4A4F;
+}
+
+.btn-enviar {
+    margin-top: 10px;
+    background: #1561F0;
+    color: #fff;
+    font-weight: 700;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(21, 97, 240, 0.3);
+}
+
+.btn-enviar:hover {
+    background: #0d4cc4;
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(21, 97, 240, 0.5);
+}
+
+/*----------FOOTER----------*/
+
+.main-footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: #2B2B2B;
+}
+
+
+.main-footer p {
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesar Teran | Desarrollador Frontend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header-logo" src="Imagen/Logo.png" alt="Logotipos de codigo">
+        <h1 class="header-name">Cesar Teran</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Desarrollador<br>Frontend</h2>
+        <h3>Desarrollador web enfocado en el diseño y la eficiencia</h3>
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/cesar-teran-173b45385" class="btn-social linkedin">
+                <img src="icons/linkedin.svg">
+            </a>
+            <a href="https://github.com/Cesaro123456789" class="btn-social github">
+                <img src="icons/github.svg">
+            </a>
+            <a href="https://wa.me/584264689489" class="btn-social whatsapp">
+                <img src="icons/whatsapp.svg">
+            </a>
+            <a href="https://www.instagram.com/tncesaro?igsh=c28zNGV1YmZhYjlt" class="btn-social instagram">
+                <img src="icons/instagram.svg">
+            </a>
+        </div>
+        <div class="cv-container">
+            <a href="CV/CV.pdf" download="CV_Cesar_Teran" class="btn-cv">
+                <img src="icons/rolldown.svg"> Descargar CV
+            </a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2 class="section-title">Sobre mí</h2>
+        <p class="about-text">
+            Mi nombre es Cesar Andrés Terán Moreno. Soy Desarrollador Frontend y mi trabajo es hacer realidad tu idea. Diseño y programo páginas web a medida.
+        </p>
+    </section>
+
+    <section class="proyects-section">
+        <h2>Proyectos</h2>
+        <div class="proyects-cards">
+            <img class="card-presentation" src="Imagen/Nexo.jpg">
+            <h3>Nexo Studio</h3>
+            <p>Nexo Studio es una agencia digital dedicada a transformar ideas en plataformas profesionales.</p>
+            <div class="skills-proyects">
+                <img src="icons/html5.svg">
+                <img src="icons/css.svg">
+                <img src="icons/javascript.svg">
+            </div>
+            <a href="https://cesaro123456789.github.io/Nexo-Studio/">Visitar</a>
+        </div>
+
+        <div class="proyects-cards">
+            <img class="card-presentation" src="Imagen/Noticia.png">
+            <h3 class="BYN">Banca y Negocios</h3>
+            <p>Banca y Negocios es un portal informativo para el análisis y lectura de artículos financieros.</p>
+            <div class="skills-proyects">
+                <img src="icons/html5.svg">
+                <img src="icons/css.svg">
+            </div>
+            <a href="https://cesaro123456789.github.io/Banca-y-Negocios/">Visitar</a>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2 class="skills">Skills</h2>
+        <div class="skills-container">
+            <div class="skills-cards">
+                <img src="icons/html-skills.svg">
+                <h2 class="skills-title">HTML</h2>
+                <h3>Nivel</h3>
+                <p>Alto</p>
+            </div>
+            <div class="skills-cards">
+                <img src="icons/css-skills.svg">
+                <h2 class="skills-title">CSS</h2>
+                <h3>Nivel</h3>
+                <p>Medio</p>
+            </div>
+            <div class="skills-cards">
+                <img src="icons/javascript-skills.svg">
+                <h2 class="skills-title">JS</h2>
+                <h3>Nivel</h3>
+                <p>Bajo</p>
+            </div>
+            <div class="skills-cards">
+                <img src="icons/git-skills.svg">
+                <h2 class="skills-title">Git</h2>
+                <h3>Nivel</h3>
+                <p>Medio</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                <textarea id="mensaje" placeholder="¿Qué tienes en mente?" rows="5" required></textarea>
+                <button type="button" class="btn-enviar" onclick="enviarWhatsApp()">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>© 2026 Cesar Teran</p>
+    </footer>
+
+    <script>
+        function enviarWhatsApp() {
+            const nombre = document.getElementById('nombre').value;
+            const mensaje = document.getElementById('mensaje').value;
+            
+            if(!nombre || !mensaje) {
+                alert("Por favor, escribe tu nombre y tu idea antes de enviar.");
+                return;
+            }
+
+            const telefono = "584264689489"; 
+            const texto = `Hola 👋 , Mi nombre es ${nombre} , ${mensaje}`;
+            const url = `https://wa.me/${telefono}?text=${texto}`;
+            
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
