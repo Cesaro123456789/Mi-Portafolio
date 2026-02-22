@@ -32,7 +32,6 @@ body {
 
 .hero {
   display: flex;
-  align-items:  star;
   justify-content: center;
   height: 90dvh;
   flex-direction: column;
@@ -48,6 +47,12 @@ body {
 .hero h3 {
   max-width: 315px;
   color: #86868B;
+}
+.h3-container {
+  display: none;
+}
+.h3-secundary {
+  display: none;
 }
 .social-buttons img {
   max-width: 35px;
@@ -84,7 +89,7 @@ body {
   top: 2.5px;
 }
 
-/*--------SOBRE MI--------*/
+/*-----------ABOUT-------------*/
 
 .about-section {
   height: 52dvh;
@@ -94,7 +99,7 @@ body {
   background-color: #2B2B2B;
 }
 .section-title {
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 8px;;
   margin: 0 100px;
   font-size: 30px;
@@ -103,12 +108,12 @@ body {
   
 }
 .about-text {
-  margin: 30px 32px;
+  margin: 35px 32px;
   font-size: 18px;
   line-height: 26px;
 }
 
-/*----------PROYECTOS---------*/
+/*----------PROYECTS---------*/
 
 .proyects-section  {
   font-family: montserrat;
@@ -178,7 +183,8 @@ body {
   max-width: 30px;
 }
 
-/*----------Skills----------*/
+
+/*----------SKILLS----------*/
 
 .skills-section {
   background-color: #2B2B2B;
@@ -230,7 +236,7 @@ body {
   width: 70px;
 }
 
-/*----------CONTACTO----------*/
+/*----------CONTACT----------*/
 
 .contact-section h2 {
   padding-top: 55px;
@@ -342,4 +348,92 @@ input:focus, textarea:focus {
     font-family: 'Outfit', sans-serif;
 }
 
+@media (min-width: 768px) {
+  
+  /*----------HEADER---------*/
+  
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /*----------HERO---------*/
+  
+  .hero {
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 80px;
+    padding-bottom: 20px;
+  }
+  .hero h3 {
+    display: none;
+  }
+  .social-buttons {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  /*-----------ABOUT----------*/
+  
+  .about-section {
+    height: 500px;
+  }
+  .section-title {
+    padding-bottom: 16px;
+    margin: 0 520px;
+    margin-bottom: 85px;
+  }
+  .about-text {
+    display: flex;
+    margin: 0 260px;
+    line-height: 45px;
+    font-size: 34px;
+  }
+  
+  /*----------PROYECTS-----------*/
+  
+  .proyects-section {
+    align-items: center;
+  }
+  .proyects-section h2 {
+    padding: 16px 50px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  .proyects-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .proyects-cards {
+    width: 450px;
+    text-align: center;
+  }
+  
+  /*----------SKILLS----------*/
+  
+  .skills {
+    margin: 46px 600px;
+    padding-bottom: 16px;
+  }
+  .skills-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  
+  /*----------CONTACT-------------*/
+  
+  .contact-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .contact-section h2 {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 15px;
+  }
+}
 
