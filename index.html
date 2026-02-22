@@ -11,10 +11,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <!----------HEADER---------->
+  
     <header class="header">
         <img class="header-logo" src="Imagen/Logo.png" alt="Logotipos de codigo">
         <h1 class="header-name">Cesar Teran</h1>
     </header>
+
+   <!-----------HERO------------>
 
     <section class="hero">
         <h2>Desarrollador<br>Frontend</h2>
@@ -39,6 +44,8 @@
             </a>
         </div>
     </section>
+    
+    <!----------ABOUT---------->
 
     <section class="about-section">
         <h2 class="section-title">Sobre mí</h2>
@@ -47,8 +54,14 @@
         </p>
     </section>
 
+   <!----------PROYECTS---------->
+
     <section class="proyects-section">
         <h2>Proyectos</h2>
+        <div class="proyects-contain">
+          
+   <!--------PROYECTS-CARDS------->
+          
         <div class="proyects-cards">
             <img class="card-presentation" src="Imagen/TG.png">
             <h3>Tu Garage</h3>
@@ -83,11 +96,16 @@
             </div>
             <a href="https://cesaro123456789.github.io/Banca-y-Negocios/">Visitar</a>
         </div>
+        </div>
         
     </section>
+    
+    <!----------SKILLS---------->
 
     <section class="skills-section">
+      
         <h2 class="skills">Skills</h2>
+        
         <div class="skills-container">
             <div class="skills-cards">
                 <img src="icons/html-skills.svg">
@@ -115,6 +133,8 @@
             </div>
         </div>
     </section>
+    
+    <!----------CONTACT---------->
 
     <section class="contact-section">
         <h2>Contacto</h2>
@@ -126,11 +146,15 @@
             </form>
         </div>
     </section>
+    
+    <!----------FOOTER---------->
 
     <footer class="main-footer">
         <p>© 2026 Cesar Teran</p>
     </footer>
-
+    
+    <!----------LOGICA---------->
+    
     <script>
         function enviarWhatsApp() {
             const nombre = document.getElementById('nombre').value;
@@ -148,5 +172,6 @@
             window.open(url, '_blank');
         }
     </script>
+    
 </body>
 </html>
